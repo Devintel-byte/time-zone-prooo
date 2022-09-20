@@ -15,7 +15,7 @@
 }
 
 .product-tag {
-    margin-left: 89em;
+    margin-left: 68em;
 }
 
 .time-tag {
@@ -100,13 +100,13 @@ li {
         top: 45px;
     }
     .time-tag {
-        font-size: 2em;
         font-family: Arial, Helvetica, sans-serif;
         line-height: 5px;
+        font-size: 1.5em;
     }
 
     .product-tag {
-        margin-left: 11em;
+        margin-left: 9em;
         height: auto;
         width: 10em;
     }
@@ -126,7 +126,7 @@ li {
     .nextUp {
         font-size: 18px;
         color: rgb(170, 175, 179);
-        margin-right: 48px;
+        margin-right: -25px;
         padding-left: 1px;
     }
     
@@ -152,20 +152,19 @@ li {
     }
 
     .side-container {
-        max-width: 100%;
         position: absolute;
     }
     
     .rightView {
-        margin-left: -50em;
-        margin-top: 37em;
+        margin-left: -31em;
+        margin-top: 45em;
         height: auto;
-        width: 200px;
+        width: 185px;
     }
 
     .feature {
         font-size: 12px;
-        margin-top: 34em;
+        margin-top: 32em;
     }
 
     .feature p {
