@@ -5,7 +5,9 @@ const RightBarContainer = () => {
     return (
         <div className="side-container">
             <img className="rightView" 
-            alt="phone" src={PhoneView} />
+            alt="phone" src={PhoneView} 
+            height='auto' width='580px'
+            />
         </div>
     )
 }

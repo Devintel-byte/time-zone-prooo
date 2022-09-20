@@ -1,7 +1,5 @@
-.rightView {
+.side-container {
     position: absolute;
-    width: 497px;
-    height: 568px;
-    left: 553px;
+    left: 830px;
     top: 75px;
 }

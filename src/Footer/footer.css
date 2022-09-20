@@ -1,5 +1,5 @@
 .tag {
-    font-size: 10px;
+    font-size: 12px;
     padding-top: 10px;
 }
 
@@ -10,6 +10,8 @@ span {
 }
 
 .support {
-    font-size: 10px;
+    font-size: 12px;
     padding-top: 15px;
+    padding-bottom: 5em;
+    color: rgb(170, 175, 179);
 }
