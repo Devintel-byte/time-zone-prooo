@@ -1,342 +1,258 @@
-.main-container {
-    display: flex;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.left-bar {
-    position: absolute;
-    padding: 25px;
-    width: 50%;
-    top: 35px;
-    left: 155px;
+.body-wrapper{
+    overflow-x: hidden;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    font-size: 14px;
 }
 
-.time-icon {
-    margin-bottom: -10px;
+.col-main {
+    width: 100%;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.col-left {
+    display: grid;
+    grid-template-columns: repeat(1,minmax(0,1fr));
 }
 
 .product-tag {
-    margin-left: 68em;
+    position: absolute;
+    width: 200px;
+    height: auto;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+.product-tag img {
+    display: block;
+    max-width: 100%;
+    border-style: solid;
+}
+
+.time-icon {
+    width: 60px;
+    height: auto;
+    max-width: 100%;
+    padding-bottom: 10px;
+    padding-top: 15px;
 }
 
 .time-tag {
-    font-size: 2.2em;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 5px;
+    font-weight: medium;
+    font-size: 1.9rem;
+    padding-bottom: 10px;
 }
 
 .btn {
-    background-color: #0033ff;
+    display: inline-flex;
+    background-color: rgb(0, 60, 255);
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    border-radius: 20px;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    border-radius: 9999px;
+    margin-top: 0.75rem;
+    border: none;
 }
 
-.text-menu {
-    position: relative;
-}
-
-h1 {
-    font-size: 75px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.header-text {
+    font-size: 3.5em;
     font-weight: 600;
-    width: 72%;
+    line-height: 1.25;
+    max-width: 20rem;
+    margin-top: 2.5rem;
 }
 
 .followUp {
-    font-size: 30px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    font-size: 2em;
+    margin-top: 1.5rem;
 }
 
 .nextUp {
-    font-size: 24px;
-    color: rgb(170, 175, 179);
-    margin-right: 11em;
+    font-size: 1.8em;
+    line-height: 2rem;
+    max-width: 36rem;
+    margin-top: 1.25rem;
+    opacity: .5;
 }
 
-.link-list {
-    margin: 15px 10px 30px -45px;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+.app-link {
+    display: inline-flex;
+    margin-top: 2rem;
+    transform: translateY(0);
+    transition: all linear .1s;
 }
 
-ul {
-    column-count: 3;
-    list-style-type: none;
-    margin-right: 15em;
+.app-store {
+    display: block;
+    max-width: 100%;
 }
 
-li {
-    font-size: 14px;
-    padding: 8px;
+.col-links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    row-gap: 1rem;
+    margin-top: 2.5rem;
+}
+
+.col-end {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col-right {
+    display: inline;
+    position: relative;
+}
+
+.rightView {
+    position: relative;
+    max-width: 100%;
+    margin-top: 2rem;
+}
+
+.rightView img {
+    display: block;
+    height: auto;
 }
 
 .feature {
-    font-size: 12px;
+    font-size: .857em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5rem;
 }
 
-.feature img {
-    justify-content: center;
-    padding: 5px;
+.boulder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.5rem;
 }
 
-.footStyle {
-    bottom: 0;
+.boulder-1 a {
+    display: inline-block;
+    transform: translateY(0);
+    transition: all linear .1s;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-/* -- Media Query -- */
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .main-container {
-        width: 300px;
-    }
-    .left-bar {
-        position: absolute;
-        padding: 10px;
-        width: 55%;
-        left: 25px;
-        top: 45px;
-    }
-    .time-tag {
-        font-family: Arial, Helvetica, sans-serif;
-        line-height: 5px;
-        font-size: 1.5em;
+.boulder-1 img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+
+.boulder-2 a {
+    display: inline-block;
+    transform: translateY(0);
+    transition: all linear .1s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.boulder-2 img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 1.5rem;
+}
+
+.tweetbird a {
+    display: inline-block;
+    transform: translateY(0);
+    transition: all linear .1s;
+    text-decoration: none;
+}
+
+.tweetbird img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 2.5rem;
+}
+
+.tribute {
+    font-size: .857em;
+    margin-top: 1.25rem;
+}
+
+.friend a {
+    display: inline-block;
+    transform: translateY(0);
+    transition: all linear .1s;
+    text-decoration: none;
+}
+
+.friend img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 0.75rem;
+}
+
+.support-tag a {
+    display: inline-flex;
+    font-size: .857em;
+    color: #fff;
+    opacity: .6;
+    margin-top: 1.25rem;
+    text-decoration: none;
+}
+
+
+
+@media (min-width: 640px) {
+    .col-main {
+        max-width: 768px;
+        margin-right: auto;
+        margin-left: auto;
     }
 
-    .product-tag {
-        margin-left: 9em;
-        height: auto;
-        width: 10em;
-    }
-    h1 {
-        font-size: 45px;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-weight: 600;
-        letter-spacing: 1.5px;
-        width: 100%;
-    }
-    .followUp {
-        font-size: 25px;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
-    
-    .nextUp {
-        font-size: 18px;
-        color: rgb(170, 175, 179);
-        margin-right: -25px;
-        padding-left: 1px;
-    }
-    
-    .app-store {
-        height: auto;
-        width: 150px
+    .col-left {
+        display: grid;
+        grid-template-columns: repeat(1,minmax(0,1fr));
+        row-gap: 1rem;
     }
 
-    .link-list {
-        margin: 15px -5px 30px -45px;
-        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
-    }
-    
-    ul {
-        column-count: 2;
-        list-style-type: none;
-        margin-right: 1em;
-    }
-    
-    li {
-        font-size: 12px;
-        padding: 8px;
+}
+
+@media (min-width: 768px) {
+    .col-right {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: flex-end;
     }
 
-    .side-container {
-        position: absolute;
-    }
-    
     .rightView {
-        margin-left: -31em;
-        margin-top: 45em;
-        height: auto;
-        width: 185px;
-    }
-
-    .feature {
-        font-size: 12px;
-        margin-top: 32em;
-    }
-
-    .feature p {
-        margin-left: 8em;
-    }
-    
-    .feature img {
-        padding: 3px;
-        margin-left: 5em;
-    }
-    
-    .footStyle {
-        padding: 10px;
-        font-size: 12px;
-        margin-left: 3em;
-    }
-
-    .tag {
-        padding-top: 10px;
-        margin-left: 2em;
-    }
-    
-    span {
-        margin-left: 3.5em;
-        font-size: 15px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: 800;
-    }
-
-    .birdie {
-        margin-left: 5.8em;
-    }
-    
-    .support {
-        margin-left: 4em;
-        color: rgb(170, 175, 179);
-    }
-    
-    
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {
-    .main-container {
-        width: 300px;
-    }
-    .left-bar {
         position: absolute;
-        padding: 10px;
-        width: 75%;
-        left: 25px;
-        top: 45px;
+        max-width: 32rem;
+        left: 0;
+        margin-top: 2rem;
     }
 
-    .time-tag {
-        font-size: 2em;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 500;
-        line-height: 5px;
-    }
-
-    .product-tag {
-        margin-left: 20em;
+    .rightView img {
+        display: block;
         height: auto;
-        width: 15em;
     }
-    h1 {
-        font-size: 45px;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-weight: 600;
-        letter-spacing: 1.5px;
-        width: 90%;
-    }
-    .followUp {
-        font-size: 25px;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-    }
-    
-    .nextUp {
-        font-size: 20px;
-        color: rgb(170, 175, 179);
-        margin-right: 15px;
-        padding-left: 1px;
-    }
-    
-    .app-store {
-        height: auto;
-        width: 150px
-    }
-
-    .link-list {
-        margin: 15px -5px 30px -45px;
-        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
-    }
-    
-    ul {
-        column-count: 2;
-        list-style-type: none;
-        margin-right: 1em;
-    }
-    
-    li {
-        font-size: 14px;
-        padding: 8px;
-    }
-
-    .side-container {
-        max-width: 100%;
-        position: absolute;
-    }
-    
-    .rightView {
-        margin-left: -35em;
-        margin-top: 37em;
-        height: auto;
-        width: 280px;
-    }
-
-    .feature {
-        font-size: 12px;
-        margin-top: 40em;
-    }
-
-    .feature p {
-        margin-left: 11em;
-    }
-    
-    .feature img {
-        padding: 2px;
-        margin-left: 8em;
-    }
-    
-    .footStyle {
-        padding: 10px;
-        font-size: 12px;
-        margin-left: 3em;
-    }
-
-    .tag {
-        padding-top: 10px;
-        margin-left: 4em;
-    }
-    
-    span {
-        margin-left: 5em;
-        font-size: 15px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: 800;
-    }
-
-    .birdie {
-        margin-left: 7.5em;
-    }
-    
-    .support {
-        margin-left: 5.8em;
-        color: rgb(170, 175, 179);
-    }
-} */
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
 }
