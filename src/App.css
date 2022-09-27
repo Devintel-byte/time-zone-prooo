@@ -141,7 +141,7 @@
     margin-top: 2.5rem;
 }
 
-.boulder {
+.boulders {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -291,17 +291,18 @@
         align-items: flex-start;
     }
 
-    .boulder {
-        display: flex;
+    .boulders {
         flex-direction: row;
     }
 
-    .boulder-2 a {
+    .boulder-2 {
         margin-left: 1.5rem;
-        margin-top: 0;
+        margin-top: -0.8em;
     }
 
+
 }
+
 
 @media (min-width: 1024px) {
     .col-left {
@@ -350,7 +351,9 @@
         margin-top: 6rem;
         right: -2.5rem;
     }
+
 }
+
 
 @media (min-width: 1280px) {
     .col-left {
