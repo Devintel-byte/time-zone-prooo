@@ -76,11 +76,8 @@ function App() {
             alt="phone" src={PhoneView}
             />
           </div>
-          
-        </div>
 
           <div className='col-end'>
-
           <div className='feature'>
             Featured on
          
@@ -113,6 +110,10 @@ function App() {
              </div>
 
           </div>
+
+        </div>
+
+          
     </div>
   </div>
   )

@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.body-wrapper{
+.col-main{
     overflow-x: hidden;
     right: 0;
     width: 100%;
@@ -12,7 +12,7 @@
     font-size: 14px;
 }
 
-.col-main {
+.col-left {
     width: 100%;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
@@ -22,10 +22,10 @@
     margin-left: auto;
 }
 
-.col-left {
+/* .col-left {
     display: grid;
     grid-template-columns: repeat(1,minmax(0,1fr));
-}
+} */
 
 .product-tag {
     position: absolute;
@@ -65,7 +65,7 @@
     padding-right: 0.75rem;
     border-radius: 9999px;
     margin-top: 0.75rem;
-    border: none;
+    border: 0;
 }
 
 .header-text {
@@ -216,27 +216,33 @@
     color: #fff;
     opacity: .6;
     margin-top: 1.25rem;
+    margin-bottom: 2rem;
     text-decoration: none;
 }
 
 
 
 @media (min-width: 640px) {
-    .col-main {
+    .col-left {
         max-width: 768px;
         margin-right: auto;
         margin-left: auto;
     }
 
-    .col-left {
+    /* .col-left {
         display: grid;
         grid-template-columns: repeat(1,minmax(0,1fr));
         row-gap: 1rem;
-    }
-
+    } */
 }
 
 @media (min-width: 768px) {
+    .col-left {
+        max-width: 960px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     .col-right {
         display: flex;
         position: relative;
@@ -246,13 +252,131 @@
 
     .rightView {
         position: absolute;
-        max-width: 32rem;
-        left: 0;
-        margin-top: 2rem;
+        max-width: 35rem;
+        margin-top: -35rem;
+        right: -3rem;
     }
 
     .rightView img {
         display: block;
         height: auto;
     }
+
+    .nextUp {
+        font-size: 1.714em;
+        max-width: 22rem;
+        line-height: 2rem;
+        opacity: .5;
+    }
+
+    .col-links {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0,1fr));
+        row-gap: 1rem;
+        margin-top: 2.5rem;
+        margin-right: 33em;
+    }
+
+    .col-end {
+        align-items: flex-start;
+        flex-direction: row;
+        display: block;
+        max-width: 1028px;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .feature {
+        align-items: flex-start;
+    }
+
+    .boulder {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .boulder-2 a {
+        margin-left: 1.5rem;
+        margin-top: 0;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .col-left {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .time-tag {
+        font-size: 2.285rem;
+        font-weight: 500;
+        padding-bottom: 10px;
+    }
+    
+
+    .header-text {
+        font-size: 5.288em;
+        max-width: 28rem;
+    }
+
+    .followUp {
+        font-size: 2.285em;
+        margin-top: 2.5rem;
+    }
+    
+    .nextUp {
+        font-size: 2em;
+        max-width: 36rem;
+        line-height: 2.5rem;
+        opacity: .5;
+    }
+
+    .col-links {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0,1fr));
+    }
+
+    .rightView {
+        position: absolute;
+        max-width: 40rem;
+        margin-top: -39rem;
+        right: -9rem;
+    }
+
+    .rightView img {
+        max-width: 36rem;
+        margin-top: 6rem;
+        right: -2.5rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .col-left {
+        max-width: 1024px;
+    }
+
+    .rightView img {
+        max-width: 42rem;
+    }
+}
+
+@media (min-width: 1690px) {
+    .col-left {
+        max-width: 1040px;
+    }
+
+    .col-links {
+        margin-right: 32rem;
+        font-size: 1.128rem;
+    }
+
+    .rightView {
+        position: absolute;
+        max-width: 45rem;
+        margin-top: -39rem;
+        right: -14rem;
+    }
+
 }
